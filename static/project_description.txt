@@ -1,0 +1,18 @@
+﻿WeatherPy
+
+In this project I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator, utilizing the citipy and openweathermap Python libraries, to create a representative model of weather across world cities.
+
+The objective was to build a series of scatter plots to showcase the following relationships:
+
+- Temperature (F) vs. Latitude
+- Humidity (%) vs. Latitude
+- Cloudiness (%) vs. Latitude
+- Wind Speed (mph) vs. Latitude
+
+The data was process as follow:
+
+- Based on latitude and longitude, randomly selected 500 unique cities.
+- Using a series of successive API calls, performed a weather check on each of the cities.
+- The plots and call results were saved in png and csv files, respectively. 
+
+

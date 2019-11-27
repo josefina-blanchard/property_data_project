@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Rent affordability</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Summary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Tableau.html">Tableau Plots<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Plotly.html">Plotly</a>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="rent_affordability.html">Texas Rent affordability</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-7">
+                <section class="description">
+                    <!-- <h1>title</h1> -->
+                    <h2>Latitude vs. Cloudiness</h2>
+                    <div class="plot">
+                            <img src="static/Rent affordability by City.PNG" alt="Graph displaying rent affordability by city">
+                    </div>
+                    <P style="margin-left: 1%px">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis autem mollitia, dolor quasi architecto possimus tenetur cum quo. Hic incidunt animi vero, at earum rem corporis magni iste ex?
+                    </P>
+                    <p>       
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reiciendis illum nobis obcaecati vitae quos suscipit, impedit neque? Corporis distinctio commodi, voluptatibus tenetur tempora quam quia odio culpa rem neque?
+                    </P>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos hic aliquid odit sapiente obcaecati perferendis velit excepturi. Fugit adipisci a sunt esse perferendis similique id aspernatur dolore officia rem!
+                    </p>
+                </section> 
+            </div>
+
+            <div class="col-sm-12 col-lg-5">
+                <section class="visual">
+                    <h1>Other charts</h1>
+                    <div class="plots">
+                        <a href="rent affordability by City.PNG" target="#">
+                            <img src="static/rent affordability by City.PNG" alt="Texas Rent affordability">
+                        </a>
+                        <!-- <a href="Visualizations/Lat_vs_hum.png" target="#">
+                            <img src="Visualizations/Lat_vs_hum.png" alt="Plot of Latitud vs. Humidity">
+                        </a>
+                        <a href="Visualizations/Lat_vs_temp.png" target="#">
+                            <img src="Visualizations/Lat_vs_temp.png" alt="Plot of Latitud vs. Temperature">
+                        </a>
+                        <a href="Visualizations/Lat_vs_wind.png" target="#">
+                            <img src="Visualizations/Lat_vs_wind.png" alt="Plot of Latitud vs. Wind Speed">
+                        </a> -->
+                    </div>     
+                </section>
+            </div>
+        </div>  
+    </div> 
+</body>
+
+<script>
+  const dropdowns = document.querySelectorAll('li.dropdown');
+
+  function toggleDropdown () {
+    const menu = this.querySelector('.dropdown-menu');  
+    this.classList.toggle('show');
+    menu.classList.toggle('show');
+  };
+
+  dropdowns.forEach(dropdown => dropdown.addEventListener('click', toggleDropdown));
+</script>
+</html>

@@ -1,0 +1,68 @@
+<style>
+        body {
+            background-color: lightgray)
+        }
+        h1 {
+            font-style: italic;
+            font-weight: bold;
+            color:#007bff;
+        }
+        h2 {
+            font-style: italic;
+            color: #fff;
+            background: #007bff;
+        }
+        .row { 
+            margin: 10px; 
+            display: flex;
+            flex-direction: column;
+        }
+        section {
+            padding: 2%;
+            /*border: black;*/
+            /*border-style: double;*/
+            background-color: lightgray;
+        }
+        .visual { 
+            margin-top: 20px; 
+        }
+        .description { 
+            margin-top: 20px; 
+        }
+        .plots {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .plots a {
+            display: block;
+            width: 21%; 
+            margin: 2%;
+        }
+        .plots img {
+            width: 100%;
+            height: auto;
+        }
+        .img-thumbnail {
+            display: block;
+            width: 21%; 
+            margin: 1%;
+        }
+        .plot img {
+            width: 100%;
+            height: auto;
+        }
+        /* large view */
+        @media (min-width: 600px) {
+            .row { 
+                flex-direction: row;
+            }
+            .visual { 
+                margin-top: 0;
+            }
+            .plots a {
+                display: block;
+                width: 45%;
+            }
+        }
+    </style>
