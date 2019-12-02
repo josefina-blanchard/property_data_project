@@ -9,7 +9,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="static/styles.css">
-    <title>Travis County Housing Market</title>
+    <title>Travis County Housing Data</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
@@ -20,56 +20,48 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="Tableau.html">Tableau Plots<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="Texas.html">Texas Market<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Plotly.html">Plotly</a>
+                            <a class="nav-link" href="Travis_County.html">Travis County Market</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Plots
+                            Conclusions
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="rent_affordability.html">Texas Rent affordability</a>
-                            </div>
+                                <a class="dropdown-item" href="Distribution.html">Target</a>
+                                <a class="dropdown-item" href="Leads.html">Leads</a>                            </div>
                         </li>
             
                     </ul>
                 </div>
         </nav>
-    <div class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
                     <section class="description">
                         <h1>Property investment decision</h1>
                         <h2>Traivs County housing data</h2>
                         <P>
-                            The objective of this project is to review the housing market trends based on Zillow 
-                            data for US to make a property investment decision, specifically on Travis county, and compare the
-                            listing prices to the rest of the State.
+                            The objective of this project is to identify local investment opportunities 
+                            and determine how the local market compares to the Texas market in the event 
+                            the local market does not produce any promising investment choices.
                         </P>    
                         <P>
-                            We built a series of plots in Tableau and Plotly to showcase the following relationships:
+                            Items for investment analysis:
                         </P>
                         <ul>
-                            <li>Texas Rent affordability</li>
-                            <li>###</li>
-                            <li>###</li>
-                            <li>###</li>
-                        </ul>
-                        <P>
-                            The data used was Web scrapped Zip codes in US, from the Zillow API, and the Census Data
-                        </P>
-                        <ul>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eligendi dolor voluptatum similique deserunt porro? Voluptatibus soluta obcaecati ratione odit, quaerat ad debitis tempore. Nemo repellendus in adipisci labore temporibus.</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dolores at sunt laudantium quasi voluptatibus quidem, temporibus ducimus rem rerum consectetur nobis eaque molestias blanditiis itaque fugiat commodi laboriosam cupiditate?</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto aut beatae nihil soluta sapiente. Reiciendis corrupti beatae placeat facere natus autem officia voluptatum et aut. Rem laboriosam quo facere!</li>
+                            <li>Top Buyer Seller Markets in the US based on Days on Market</li>
+                            <li>Rent Affordability using Zillow’s Rent Affordability Index as our baseline</li>
+                            <li>Review Listing price to determine trending using linear regression</li>
+                            <li>Determine potential cash flow from a full offer on various home types, and locations</li>
                         </ul>
                     </section> 
                 </div>
     
             </div>  
-    </div> 
+    </div>
 
 </body>
 <script>

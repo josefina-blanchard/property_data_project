@@ -49,21 +49,25 @@ def home():
     """Render Home Page."""
     return render_template("index.html")
 
-@app.route("/Tableau.html")
-def tableau_page():
-    return render_template("Tableau.html")
+@app.route("/Texas.html")
+def texas_page():
+    return render_template("Texas.html")
 
-@app.route("/rent_affordability.html")
-def rent_page():
-    return render_template("rent_affordability.html")
+@app.route("/Leads.html")
+def leads_page():
+    return render_template("Leads.html")
 
-@app.route("/Plotly.html")
-def Plotly_page():
+@app.route("/Distribution.html")
+def distribution_page():
+    return render_template("Distribution.html")
+
+@app.route("/Travis_County.html")
+def Travis_County_page():
 
     results = db.session.query(plotly.zipcode).all()
     z = [row[0] for row in results]
     
-    return render_template("Plotly.html", zipcodes=z)
+    return render_template("Travis_County.html", zipcodes=z)
 
 @app.route("/zipcode/<z>")
 def zipcode_data(z):
